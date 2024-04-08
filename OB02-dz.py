@@ -20,7 +20,7 @@ class User:
         self.__id = user_id
         self.__name = name
         self.__access_level = "user"
-        self.__private = None
+
 
     def get_name(self):
         return self.__name
