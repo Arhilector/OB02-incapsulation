@@ -31,6 +31,9 @@ class User:
     def set_private(self, name):
         self.__private = name
 
+    def set_private_id(self, id):
+        self.__private = id
+
 
 class Admin(User):
     def __init__(self, user_id, name):
@@ -71,6 +74,9 @@ print("СПИСОК СОТРУДНИКОВ: ")
 admin.show_users()
 
 user2.set_private("теперь его зовут махмут")
+print(user2.get_private())
+
+user2.set_private_id("id пользователя изменен на 88")
 print(user2.get_private())
 
 
