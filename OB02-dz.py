@@ -28,8 +28,8 @@ class User:
     def get_private(self):
         return self.__private
 
-    def set_private(self, value):
-        self.__private = value
+    def set_private(self, name):
+        self.__private = name
 
 
 class Admin(User):
